@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Foro">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:animationCache="true"
+        android:background="#0870B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/exercise3"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+            app:layout_constraintStart_toEndOf="@+id/home3"
+            app:srcCompat="@drawable/exercise_foreground" />
+
+        <ImageButton
+            android:id="@+id/nutrition3"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profile3"
+            app:layout_constraintStart_toEndOf="@+id/imageButton3"
+            app:srcCompat="@drawable/nutrition_foreground" />
+
+        <ImageButton
+            android:id="@+id/home3"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/exercise3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/home_foreground" />
+
+        <ImageButton
+            android:id="@+id/profile3"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nutrition3"
+            app:srcCompat="@drawable/profile_foreground" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="80sp"
+            android:layout_height="75sp"
+            android:backgroundTint="#0870B5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nutrition3"
+            app:layout_constraintStart_toEndOf="@+id/exercise3"
+            app:srcCompat="@drawable/icono_mas_foreground" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="REALHEALTH"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="0sp"
+            android:layout_height="25sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="64sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginBottom="8sp"
+            android:background="#FFFFFF"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userTarget"
+            android:layout_width="0sp"
+            android:layout_height="25sp"
+            android:layout_marginStart="3sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="16sp"
+            android:background="#FFFFFF"
+            android:text="Perder Peso"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/weight"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="0sp"
+            android:layout_height="25sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="3sp"
+            android:autoText="false"
+            android:background="#FFFFFF"
+            android:text="178 cm"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/weight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="0sp"
+            android:layout_height="25sp"
+            android:layout_marginStart="3sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="3sp"
+            android:background="#FFFFFF"
+            android:text="82 Kg"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/userTarget"
+            app:layout_constraintStart_toEndOf="@+id/height"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+        <ImageButton
+            android:id="@+id/calendario"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#0870B5"
+            app:layout_constraintBottom_toTopOf="@+id/userName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/calendario1_foreground">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/foro"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#0870B5"
+            android:onClick="toForo"
+            app:layout_constraintBottom_toTopOf="@+id/userName"
+            app:layout_constraintEnd_toStartOf="@+id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/chat_foreground" />
+
+        <Button
+            android:id="@+id/buttonEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_marginStart="23sp"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="32sp"
+            android:layout_marginBottom="22sp"
+            android:text="Enviar"
+            app:layout_constraintBottom_toTopOf="@+id/profile3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/enviar"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <EditText
+            android:id="@+id/enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_marginStart="32sp"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="7sp"
+            android:layout_marginBottom="22sp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Enviar..."
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/exercise3"
+            app:layout_constraintEnd_toStartOf="@+id/buttonEnviar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            android:layout_marginStart="16sp"
+            android:layout_marginTop="150sp"
+            android:layout_marginEnd="16sp"
+            android:layout_marginBottom="150sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/bocadillo"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_gravity="start"
+                app:srcCompat="@drawable/bocadillo1_foreground" />
+
+            <ImageView
+                android:id="@+id/bocadillo2"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_gravity="right|center_vertical"
+                android:visibility="visible"
+                app:srcCompat="@drawable/bocadillo_foreground"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/bocadillo1"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_gravity="bottom|left"
+                app:srcCompat="@drawable/bocadillo1_foreground" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

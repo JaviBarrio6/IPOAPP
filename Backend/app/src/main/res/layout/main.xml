@@ -34,6 +34,7 @@
 
         <TextView
             android:id="@+id/userName"
+            android:text="Adrian"
             android:layout_width="0sp"
             android:layout_height="25sp"
             android:layout_marginStart="16sp"
@@ -47,7 +48,8 @@
             app:layout_constraintBottom_toTopOf="@+id/height"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <TextView
             android:id="@+id/userTarget"
@@ -201,6 +203,7 @@
             android:layout_height="50sp"
             android:backgroundTint="#0870B5"
             android:onClick="toForo"
+            android:contentDescription="Foro"
             app:layout_constraintEnd_toStartOf="@+id/title"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/chat_foreground"

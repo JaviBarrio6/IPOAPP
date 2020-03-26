@@ -14,14 +14,6 @@ public class Main extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        TextView name = findViewById(R.id.userName);
-        name.setText("adrian");
-        TextView altura = findViewById(R.id.height);
-        altura.setText("183 cms");
-        TextView peso = findViewById(R.id.weight);
-        peso.setText("82 Kg");
-        TextView objetivo = findViewById(R.id.userTarget);
-        objetivo.setText("Bajar de peso");
 
     }
 
@@ -41,7 +33,7 @@ public class Main extends AppCompatActivity {
         startActivity(a);
     }
 
-    public void toExercise(View excersise){
+    public void toExercise(View exersise){
         Intent a = new Intent(this, Exercise.class);
         startActivity(a);
     }
@@ -60,5 +52,11 @@ public class Main extends AppCompatActivity {
         Intent a = new Intent(this, ExerciseList.class);
         startActivity(a);
     }
+
+    public void toError(View Error){
+        Intent a = new Intent(this, Error.class);
+        startActivity(a);
+    }
+
 
 }

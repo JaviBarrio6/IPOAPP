@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity {
         String passwordUser = this.password.getText().toString();
 
         if (emailUser.equals("adrian") && passwordUser.equals("adrian")){
-            Toast.makeText(this, "el nombre es " + passwordUser, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Bienvenido adrian", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(this, Main.class);
             startActivity(i);
         }
@@ -58,5 +58,10 @@ public class Login extends AppCompatActivity {
 
     }
 
+    public void toError(View error){
+        Intent i = new Intent(this, Error.class);
+        startActivity(i);
+
+    }
 
 }
